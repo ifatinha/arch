@@ -1,0 +1,4 @@
+/* resets e tipografias */
+@import "base/minireset.min.css";
+@import "base/tipografia.css";
+@import "base/base.css";
