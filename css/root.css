@@ -2,3 +2,8 @@
 @import "base/minireset.min.css";
 @import "base/tipografia.css";
 @import "base/base.css";
+
+/* layout */
+@import "layout/header.css";
+@import "layout/recursos.css";
+@import "layout/sobre.css";

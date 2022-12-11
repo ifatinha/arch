@@ -1,0 +1,139 @@
+.header-container {
+    background: linear-gradient(rgba(6, 45, 108, 0.5), rgba(6, 45, 108, 0.5)), url("/images/slider-1.jpg") no-repeat center center;
+    background-size: cover;
+    border-bottom-left-radius: 200px;
+    height: 950px;
+    width: 100%;
+}
+
+.header {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 4%;
+}
+
+.logo {
+    flex-basis: 150px;
+}
+
+.nav-desktop ul {
+    gap: 40px;
+}
+
+.nav-desktop ul a {
+    color: var(--white);
+    line-height: 24px;
+    padding: 10px 0;
+}
+
+.nav-desktop a::after {
+    background-color: var(--yellow);
+    content: "";
+    display: block;
+    margin-top: 4px;
+    height: 2px;
+    transition: all .3s ease-in-out;
+    width: 0;
+}
+
+.nav-desktop a:hover::after {
+    width: 100%;
+}
+
+.nav-mobile {
+    background: url("/images/menu.png") no-repeat center center;
+    background-size: cover;
+    display: none;
+    height: 48px;
+    width: 48px;
+}
+
+.nav-mobile-ul {
+    background-color: var(--white);
+    display: none;
+    flex-direction: column;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+
+.nav-mobile-ul a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.nav-mobile:hover .nav-mobile-ul {
+    display: block;
+}
+
+.header-content {
+    flex-direction: column;
+    height: 430px;
+    justify-content: flex-end;
+    margin-top: 150px;
+    padding: 0 4%;
+}
+
+.header-content p {
+    color: var(--white);
+    line-height: 24px;
+    max-width: 550px;
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+.header-content h1 {
+    color: var(--white);
+    font-size: var(--fonte-60);
+    font-weight: 700;
+    line-height: 72px;
+    max-width: 25ch;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 991px) {
+    .header-container {
+        border-bottom-left-radius: 100px;
+        height: 700px;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    .header-content {
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .header-content h1 {
+        font-size: var(--fonte-40);
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .header-container {
+        border-bottom-left-radius: 80px;
+        height: 650px;
+    }
+
+    .header-content h1 {
+        font-size: var(--fonte-30);
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .header-content {
+        margin-top: 0;
+    }
+}

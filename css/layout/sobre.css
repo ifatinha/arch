@@ -1,0 +1,45 @@
+.sobre {
+    align-items: center;
+    height: 950px;
+    position: relative;
+    width: 100%;
+}
+
+.sobre-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 2%;
+}
+
+.sobre-img {
+    border-radius: 40px 40px 0 40px;
+    justify-self: center;
+    object-fit: cover;
+}
+
+.sobre-texto {
+    align-self: center;
+}
+
+.sobre-texto::before {
+    background-color: var(--dark-blue);
+    content: "";
+    display: block;
+    margin-right: 30px;
+    height: 105px;
+    width: 8px;
+}
+
+.sobre-texto h2 {
+    align-items: center;
+    color: var(--dark-blue);
+    font-size: var(--fonte-40);
+    line-height: 85px;
+}
+
+.sobre-texto span {
+    color: var(--yellow-s);
+    font-size: var(--fonte-70);
+    font-weight: 800;
+}
