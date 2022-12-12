@@ -1,34 +1,31 @@
 .sobre {
     align-items: center;
+    background: linear-gradient(to right, rgba(248, 249, 250, .7) 0%, rgba(248, 249, 250, 9) 40%), url("/images/about_bg.jpg") no-repeat center center;
+    background-size: cover;
     height: 950px;
-    position: relative;
+    justify-content: center;
     width: 100%;
 }
 
 .sobre-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 0 2%;
+    gap: 40px;
 }
 
 .sobre-img {
     border-radius: 40px 40px 0 40px;
-    justify-self: center;
     object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
-.sobre-texto {
+.sobre-content {
     align-self: center;
 }
 
-.sobre-texto::before {
-    background-color: var(--dark-blue);
-    content: "";
-    display: block;
-    margin-right: 30px;
-    height: 105px;
-    width: 8px;
+.sobre-texto {
+    padding-left: 35px;
 }
 
 .sobre-texto h2 {
@@ -36,10 +33,88 @@
     color: var(--dark-blue);
     font-size: var(--fonte-40);
     line-height: 85px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.sobre-texto h2::before {
+    background-color: var(--dark-blue);
+    content: "";
+    display: block;
+    height: 100%;
+    left: -45px;
+    position: absolute;
+    top: 0;
+    width: 9px;
 }
 
 .sobre-texto span {
     color: var(--yellow-s);
     font-size: var(--fonte-70);
     font-weight: 800;
+    margin-right: 10px;
+}
+
+.sobre-texto h3 {
+    color: var(--dark-blue);
+    font-size: var(--fonte-40);
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 25px;
+}
+
+.sobre-texto p {
+    color: var(--light-blue);
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.sobre-texto p:last-of-type {
+    margin-bottom: 45px;
+}
+
+@media screen and (max-width: 1024px) {
+    .sobre {
+        padding: 0 4%;
+    }
+
+    .sobre-texto :is(h2, h3) {
+        font-size: var(--fonte-30);
+    }
+
+    .sobre-texto p:last-of-type {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .sobre {
+        background: linear-gradient(rgb(248, 249, 250, 9) 100%, rgb(248, 249, 250, 9) 100%);
+        height: auto;
+    }
+
+    .sobre-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .sobre-texto {
+        padding-left: 15px;
+    }
+
+    .sobre-texto :is(h2, h3) {
+        font-size: var(--fonte-24);
+        line-height: 35px;
+    }
+
+    .sobre-texto h2::before {
+        left: -20px;
+    }
+
+    .sobre-texto span {
+        font-size: var(--fonte-60);
+    }
 }

@@ -2,8 +2,15 @@
 @import "base/minireset.min.css";
 @import "base/tipografia.css";
 @import "base/base.css";
+@import "base/generics.css";
+@import "base/animation.css";
 
 /* layout */
 @import "layout/header.css";
 @import "layout/recursos.css";
 @import "layout/sobre.css";
+@import "layout/servicos.css";
+@import "layout/galeria.css";
+@import "layout/contador.css";
+@import "layout/equipe.css";
+@import "layout/clientes.css";

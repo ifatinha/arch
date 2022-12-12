@@ -1,0 +1,64 @@
+.contador {
+    background: linear-gradient(rgba(26, 49, 84, 0.79), rgba(26, 49, 84, 0.79)), url("/images/counter.jpg") no-repeat center;
+    background-size: cover;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    width: 100%;
+}
+
+.contador-content {
+    padding: 120px 2%;
+}
+
+.contador-titulo {
+    color: var(--white);
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.contador-projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.projetos-item {
+    align-self: stretch;
+    color: var(--white);
+    text-align: center;
+}
+
+.projetos-item i {
+    display: block;
+    font-size: var(--fonte-60);
+    line-height: 60px;
+}
+
+.projetos-item h3 {
+    display: inline;
+    font-size: var(--fonte-44);
+    font-weight: 700;
+    line-height: 65px;
+}
+
+.projetos-item p {
+    line-height: 24px;
+}
+
+@media screen and (max-width: 800px) {
+    .contador {
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contador {
+        border-top-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+
+    .contador-projetos {
+        grid-template-columns: 1fr 1fr;
+    }
+}

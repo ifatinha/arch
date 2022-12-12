@@ -1,0 +1,165 @@
+.galeria {
+    padding: 120px 2%;
+    width: 100%;
+}
+
+.galeria-titulo {
+    text-align: center;
+}
+
+.galeria-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "img1 img2 img3"
+        "img1 img4 img5";
+    grid-auto-rows: 300px;
+    width: 100%;
+}
+
+.galeria-item {
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-bg-01 {
+    background: url("/images/house-01.jpg") no-repeat center center;
+    background-size: cover;
+    grid-area: img1;
+}
+
+.img-bg-02 {
+    background: url("/images/house-02.jpg") no-repeat center center;
+    background-size: cover;
+    grid-area: img2;
+}
+
+.img-bg-03 {
+    background: url("/images/house-03.jpg") no-repeat center center;
+    background-size: cover;
+    grid-area: img3;
+}
+
+.img-bg-04 {
+    background: url("/images/house-04.jpg") no-repeat center center;
+    background-size: cover;
+    grid-area: img4;
+}
+
+.img-bg-05 {
+    background: url("/images/house-05.jpg") no-repeat center center;
+    background-size: cover;
+    grid-area: img5;
+}
+
+.galeria-img {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.galeria-img::before {
+    background-color: rgba(26, 49, 84, 0.73);
+    border-radius: 40px;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease-out 0s;
+    visibility: hidden;
+    width: 100%;
+}
+
+.galeria-descricao {
+    bottom: 30px;
+    left: 30px;
+    opacity: 0;
+    padding: 30px;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+}
+
+.galeria-descricao::before {
+    border-left: 2px solid var(--light);
+    border-bottom: 2px solid var(--light);
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    transition: all 0.3s ease-out 0s;
+    width: 0;
+}
+
+.galeria-descricao h2 {
+    color: var(--white);
+    font-size: var(--fonte-24);
+    font-weight: 500;
+    line-height: 28px;
+    transition: all 0.8s ease-out 0s;
+    transform: translateX(-100%);
+}
+
+.galeria-descricao p {
+    color: var(--white);
+    line-height: 24px;
+    transition: all 0.8s ease-out 0s;
+    transform: translateX(-100%);
+}
+
+.galeria-item:hover .galeria-img::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.galeria-item:hover .galeria-descricao {
+    opacity: 1;
+    visibility: visible;
+}
+
+.galeria-item:hover .galeria-descricao::before {
+    height: 110px;
+    transition-delay: 0.2s;
+    width: 110px;
+}
+
+.galeria-item:hover .galeria-descricao h2 {
+    transform: translateX(0);
+    transition-delay: 0.2s;
+}
+
+.galeria-item:hover .galeria-descricao p {
+    transform: translateX(0);
+    transition-delay: 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+    .galeria-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "img1 img1"
+            "img1 img1"
+            "img1 img1"
+            "img2 img3"
+            "img4 img5";
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .galeria-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5";
+    }
+}

@@ -17,29 +17,3 @@ a {
     color: inherit;
     text-decoration: none;
 }
-
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.flex {
-    display: flex;
-}
-
-.btn-padrao {
-    background-color: var(--yellow-s);
-    border-radius: 5px;
-    color: var(--white);
-    display: inline-block;
-    font-weight: 500;
-    line-height: 48px;
-    padding: 0 40px;
-    text-align: center;
-    transition: all .3s ease-in-out;
-}
-
-.btn-padrao:hover {
-    opacity: .9;
-}
