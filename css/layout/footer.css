@@ -48,6 +48,11 @@
 .footer-contato ul a {
     color: var(--white);
     line-height: 24px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.footer-contato ul a:hover {
+    color: var(--yellow-s);
 }
 
 .footer-copyright {
