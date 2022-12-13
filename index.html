@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto pessoal feito com objetivo de fixar os conceitos de grid css">
     <meta name="author" content="Fatima Ferreira">
-    <meta name="keywords" content="grid css, html, projeto, estudo,arch">
+    <meta name="keywords" content="grid css, html, projeto, estudo, arch">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/root.min.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Arch</title>
 </head>
@@ -337,7 +337,7 @@
                         <p>It is a long established fact that a reader will be distracted by the readable content of a
                             page when looking at its layout. The point of using Lorem Ipsum is that it has a
                             more-or-less normal distribution of letters, as opposed to using.</p>
-                        <h4>Robe Hope</h4>
+                        <h3>Robe Hope</h3>
                         <span>Business Owner</span>
 
                         <div class="comentario-arrows">
@@ -391,6 +391,115 @@
             </div>
         </div>
     </section>
+
+    <section id="contato" class="contato">
+        <div class="container contato-container">
+            <div class="contato-form">
+                <h2 class="secao-titulos contato-titulo">Entrar em contato</h2>
+                <form action="./" class="form-container">
+                    <div class="form-item">
+                        <input type="text" name="nome" id="nome" aria-label="Nome" placeholder="Nome">
+                    </div>
+                    <div class="form-item">
+                        <input type="email" name="email" id="email" aria-label="Email" placeholder="E-mail">
+                    </div>
+                    <div class="form-item">
+                        <input type="text" name="cidade" id="cidade" aria-label="Cidade" placeholder="Sua cidade">
+                    </div>
+                    <div class="form-item">
+                        <input type="tel" name="telefone" id="telefone" aria-label="Telefone"
+                            placeholder="Número de contato">
+                    </div>
+                    <div class="form-item">
+                        <textarea name="messagem" id="messagem" cols="30" rows="10"
+                            aria-label="Mensagem">Mensagem</textarea>
+                    </div>
+                    <div class="form-item">
+                        <a href="./" class="btn-padrao">Enviar Messagem</a>
+                    </div>
+                </form>
+            </div>
+            <div class="contato-endereco">
+                <h2 class="secao-titulos contato-titulo">Contate-nos</h2>
+                <p>Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et
+                    dolore.Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut
+                    labore et dolore.Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor
+                    inidunt ut labore et dolore.
+                </p>
+
+                <ul class="nav-endereco">
+                    <li class="flex">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+8398888-5656">+8398888-5656</a>
+                    </li>
+                    <li class="flex">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:arch@contato.com.br">arch@contato.com.br</a>
+                    </li>
+                    <li class="flex">
+                        <i class="fa-solid fa-globe"></i>
+                        <a href="./index.html">www.archandconstruction.com</a>
+                    </li>
+                    <li class="flex">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <a href="./">Avenida Timbauba 38/3, <br> Serra Grande - Brasil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-paragrafo">
+                <div class="logo-footer">
+                    <img src="/images/logo.png" alt="Logo Arch">
+                </div>
+                <p>Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et
+                    dolore. Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut
+                    labore et dolore.
+                </p>
+            </div>
+            <div class="footer-contato">
+                <div class="footer-contato-item">
+                    <h2>Companhia</h2>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#time">Time</a></li>
+                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contato-item">
+                    <h2>Informações</h2>
+                    <ul>
+                        <li><a href="./">Termos e condições</a></li>
+                        <li><a href="./">Privacidade</a></li>
+                        <li><a href="./">Política</a></li>
+                        <li><a href="./">Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contato-item">
+                    <h2>Social</h2>
+                    <ul>
+                        <li><a href="./">Facebook</a></li>
+                        <li><a href="./">Twitter</a></li>
+                        <li><a href="./">Instagram</a></li>
+                        <li><a href="./">Linkedin</a></li>
+                        <li><a href="./">Pintarest</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-copyright">
+                <p>Desenvolvido por <a href="./">Fatima Ferreira</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>

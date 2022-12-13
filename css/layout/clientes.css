@@ -61,7 +61,7 @@
     margin-bottom: 35px;
 }
 
-.comentario-paragrafo h4 {
+.comentario-paragrafo h3 {
     font-size: var(--fonte-20);
     font-weight: 600;
     line-height: 24px;
@@ -142,6 +142,10 @@
 
     .comentario-arrows {
         display: none;
+    }
+
+    .parceiros-container {
+        padding: 40px 2%;
     }
 
     .parceiros-galeria {
